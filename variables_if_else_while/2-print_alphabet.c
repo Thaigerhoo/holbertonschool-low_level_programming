@@ -1,5 +1,8 @@
 #include <stdio.h>
-
+/**
+ * main - print the alphabet in lowercase using putchar
+ * Return: 0 (Success)
+ */
 int main(void)
 {
 	char letter = 'a';
