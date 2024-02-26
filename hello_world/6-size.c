@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - Program that prints the size of various types
- * return 0 (Sucess)
+ * Return: 0 (Sucess)
  */
 int main(void)
 {
