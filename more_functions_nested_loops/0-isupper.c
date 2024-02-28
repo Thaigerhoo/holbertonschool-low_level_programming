@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _isupper - finds out if the letter is uppercase
  * @c: letter to be indentified
@@ -12,7 +13,5 @@ int _isupper(int c)
 		return (1);
 	}
 	else
-	{
 		return (0);
-	}
 }
