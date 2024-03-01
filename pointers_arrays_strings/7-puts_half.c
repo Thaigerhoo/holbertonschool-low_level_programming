@@ -3,34 +3,35 @@
 /**
  * puts_half - prints half of a string
  * @str: string
- * Return: always success
+ * Return: Success
  */
 
 void puts_half(char *str)
-
 {
-	int length, i, n;
+	int l, i, n;
 
-	length = 0;
+	l = 0;
 
-	while (str[length] != '\0')
+	while (str[l] != '\0')
 	{
-		length++;
+		l++;
 	}
 
-	if (length % 2 == 0)
+	if (l % 2 == 0)
 	{
-		for (i = length / 2; str[i] != '\0'; i++)
+		for (i = l / 2; str[i] != '\0'; i++)
 		{
 			_putchar(str[i]);
 		}
-	} else if (length % 2)
+	}
+
+		else if (l % 2)
 	{
-		for (n = (length - 1) / 2; n < length - 1; n++)
+		for (n = (l - 1) / 2; n < l - 1; n++)
 		{
 			_putchar(str[n + 1]);
 		}
 	}
 
-_putchar('\n');
+	_putchar('\n');
 }
