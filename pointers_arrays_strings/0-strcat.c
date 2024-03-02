@@ -4,20 +4,20 @@
  * *_strcat - concatenates two strings
  * @dest: string used
  * @src: string used
- * @n: int used as value of string
  * Return: dest(Success)
  */
 
-char *_strncpy(char *dest, char *src, int n)
+char *_strcat(char *dest, char *src)
 
 {
-	int c;
+	int i = 0;
+	int l = 0;
 
-	for (c = 0; c < n; c++)
-	{
-		dest[c] = src[c];
-	}
-	dest = '\0';
+	while (dest[i++])
+		l++;
+
+	for (i = 0; src[i]; i++)
+		dest[l++] = src[i];
 
 	return (dest);
 }
