@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_strncpy - concatenates two strings
+ * *_strncpy - copies strings
  * @dest: string used
  * @src: string used
  * @n: int used as value of string
@@ -9,16 +9,15 @@
  */
 
 char *_strncpy(char *dest, char *src, int n)
-
 {
-        int c;
+	int i;
 
-        for (c = 0; c < n; c++)
-        {
-                dest[c] = src[c];
-        }
-        dest = '\0';
+	for (i = 0; i < n && src[i] != '\0'; i++)
+		dest[i] = src[i];
 
-        return (dest);
+	for ( ; i < n; i++)
+		dest[i] = '\0';
+
+	return (dest);
+
 }
-
