@@ -1,22 +1,22 @@
 #include "main.h"
 /**
  * string_toupper - changes lowercase letters to uppercse in a string
- * @s: string used
+ * @str: string used
  * Return: s (Success)
  */
 
-char *string_toupper(char *s)
+char *string_toupper(char *str)
 
 {
 	int ind;
 
-	while (s[ind])
+	while (str[ind])
 	{
-		if (s[ind] >= 'a' && s[ind] <= 'z')
-			s[ind] -= 32;
+		if (str[ind] >= 'a' && str[ind] <= 'z')
+			str[ind] -= 32;
 
 		ind++;
 	}
 
-	return (s);
+	return (str);
 }
