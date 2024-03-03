@@ -2,13 +2,13 @@
 /**
  * string_toupper - changes lowercase letters to uppercse in a string
  * @str: string used
- * Return: s (Success)
+ * Return: str (Success)
  */
 
 char *string_toupper(char *str)
 
 {
-	int ind;
+	int ind = 0;
 
 	while (str[ind])
 	{
