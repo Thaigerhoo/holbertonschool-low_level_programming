@@ -4,7 +4,7 @@
  * _strpbrk - locates the first occurance in a string and another one
  * @s: pointer used
  * @accept: pointer to a char
- * Return: NULL
+ * Return: NULL (Success)
  */
 
 char *_strpbrk(char *s, char *accept)
@@ -16,10 +16,9 @@ char *_strpbrk(char *s, char *accept)
 		for (i = 0; accept[i]; i++)
 		{
 			if (*s == accept[i])
-			{
 				return (s);
-			}
 		}
+
 		i++;
 	}
 	return (NULL);
