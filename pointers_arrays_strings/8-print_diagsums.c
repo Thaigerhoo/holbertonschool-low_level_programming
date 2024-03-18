@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * print_diagmus - sums two diagonals and prints the result
+ * print_diagsums - sums two diagonals and prints the result
  * @a: integers
  * @size: size of the matrix
  */
